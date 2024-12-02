@@ -1,0 +1,213 @@
+body {
+  font-family: 'Overpass', sans-serif;
+  font-weight: normal;
+  font-size: 100%;
+  color: rgb(1, 7, 20);
+  background-image:url("../img/fondoazul.png");
+  margin: 50;
+  background-position: center;
+  background-size:cover;
+
+}
+#f1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 5px;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 80%;
+  height: 80%;}
+
+
+/* formulario de login */
+#login {
+  max-width: 450px;
+  min-width: 480px;
+  padding: 40px 50px 50px 80px;
+  background-color: #516d8fc9;
+  border-style:double;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  box-sizing: border-box;
+  opacity: 1;
+  filter: alpha(opacity=1);
+}
+
+#login label {
+  display: block;
+  font-family: 'Overpass', sans-serif;
+  color:rgb(19, 42, 90);
+  margin-top: 5px;
+  text-align:left;
+  font-size:20PX;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#login input {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 80%;
+  color: black;
+  width: 80%;
+  height: 40px; 
+  margin-bottom: 3px;
+  padding: 5px 5px 5px 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#login input::placeholder {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:large;
+  color: rgb(136, 37, 37);
+
+}
+
+#login button {
+  font-family: 'Overpass', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20PX;
+  color:rgb(228, 220, 220);
+  width: 30%;
+  height: 40px; 
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px; 
+  background-color: rgb(28, 54, 102); 
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right: auto;
+  display: grid;
+   place-content: center;
+}
+
+#login button:hover {
+  background-color: rgb(12, 22, 51);
+  color:rgb(255, 255, 255);}
+
+.logo-empresa img {
+  width: 60%;
+}
+
+hr {
+  border-top: 1px solid #212179;
+border-bottom: 1px solid #dfcdc3;
+  
+}
+.pie-form {
+  font-size: 90%;
+  text-align: center;    
+  margin-top: 15px;
+}
+
+.pie-form a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+  color: black;
+}
+
+@media all and (max-width: 775px)
+{
+
+  
+  #login {
+      margin: 0 auto;
+  }
+  
+  
+  #login label {
+      text-align: left;
+  }
+}
+#slider{
+  width: 50%;
+  height: 500px;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+#contenedor1{
+  display:grid;
+  width:100%;
+  grid-template-columns: 100% 100% 100%;
+  animation-name: mover;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+#imagen1{
+  position: relative;
+  background-image:url("../img/biblioteca1.jpeg");
+  width:100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+
+}
+#imagen2{
+  position: relative;
+  background-image:url("../img/biblioteca2.jpg");
+  width:100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+
+}
+#imagen3{
+  position: relative;
+  background-image:url("../img/biblioteca3.jpg");
+  width:100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+
+}
+#imagen4{
+  position: relative;
+  background-image:url("../img/biblioteca4.jpg");
+  width:100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+
+}
+.fondo-slider{
+  position: absolute;
+  background:linear-gradient(rgba(0, 60, 255, 0.322),blue);
+  width: 100%;
+  height:500px;
+  opacity:0.7;
+}
+h2{
+  position: relative;
+  width: 60%;
+  margin: auto;
+  margin-top: 58%;
+  font-family:'Popins';
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+@keyframes mover{
+  25%{margin-left: 0%;}
+  28%{margin-left: -100%;}
+  54%{margin-left: -100%;}
+  58%{margin-left: -200%;}
+  85%{margin-left: -200%;}
+  90%{margin-left: -100%;}
+  100%{margin-left: 0%;}
+}

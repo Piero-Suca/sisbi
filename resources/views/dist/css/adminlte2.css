@@ -1,0 +1,65 @@
+
+th,#tabla,#contenido {
+  border: 1px solid;
+  text-align:center;
+  width: auto;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#contenido{
+font-size: 0.6rem;
+color: rgb(15, 15, 15);
+font-family: Helvetica, Arial, sans-serif;
+text-align: center;}
+
+@page {
+margin:0cm 0cm;
+}
+
+/** Defina ahora los márgenes reales de cada página en el PDF **/
+body {
+margin-top: 2.5cm;
+margin-left: 2cm;
+margin-right: 2cm;
+margin-bottom: 2cm;
+}
+
+/** Definir las reglas del encabezado **/
+header {
+position: fixed;
+top: -0px;
+left: 0cm;
+right: 0cm;
+height:10 cm;
+
+/** Estilos extra personales **/
+background-color: #082d6c;
+color: white;
+text-align: center;
+line-height: 1.5cm;
+}
+
+/** Definir las reglas del pie de página **/
+footer {
+position: fixed;
+bottom: 0cm;
+left: 0cm;
+right: 0cm;
+height: 2cm;
+
+/** Estilos extra personales **/
+background-color: #082d6c;
+color: white;
+text-align: center;
+line-height: 1.5cm;
+}
+#titulo{
+    font-size:1em;
+    line-height:1.5em;
+    height: 2cm;
+	max-width:650px;
+    text-align: center;
+}
+

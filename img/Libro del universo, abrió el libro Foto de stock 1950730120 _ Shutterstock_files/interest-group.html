@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- saved from url=(0201)https://fledge.us.criteo.com/interest-group?data=MxskyHxOUklkY2t4MitUbDVQeU96WE5abzRRTjFiSTBub3RWeTc1NDFPU1RPTEdKVVM0aHphOVpHWS9aU1RuVEFhWmFRV3UxWkhUZWdFdVlWTjV6dzRpZVhIUFovd1dvYlZJS0VjY0NjeXduR2g5bz18 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!-- Chrome origin trial token -->
+    <meta http-equiv="origin-trial" content="AnolOEEMEnMaCvmUcw/eijaA/Ntx4pke43TW8O1+XFxTL7yMSzmBnkPrjQ33sKmqvREEpLQOE72gUMzHLu9KiAoAAABseyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY5NTE2Nzk5OSwiaXNTdWJkb21haW4iOnRydWV9">
+</head>
+<body>
+
+<script>
+    if (!navigator.joinAdInterestGroup) {
+        console.log("No fledge for you!");
+    } else {
+        var igs = [{"owner":"https://fledge.us.criteo.com","name":"W16Pcnw2MFJRaUFaZDNwVC84SUR5dElxaitnPT18","priorityVector":{"browserSignals.ageInMinutes":-1,"browserSignals.one":-86400},"biddingLogicURL":"https://fledge.us.criteo.com/simplebid?platform=us","biddingWasmHelperURL":"https://fledge.us.criteo.com/criteo.wasm","trustedBiddingSignalsURL":"https://fledge.us.criteo.com/getvalues","trustedBiddingSignalsKeys":["sCVx2XxOUklkY2t4MitUbDVQeU96WE5abzRVTkpJNThOSEVtQk5HNGhlbllGRWtZPXw"],"userBiddingSignals":{},"updateURL":"https://fledge.us.criteo.com/interest-group/update?key=sCVx2XxOUklkY2t4MitUbDVQeU96WE5abzRVTkpJNThOSEVtQk5HNGhlbllGRWtZPXw","ads":[],"adComponents":[],"executionMode":"group-by-origin"}];
+        var expiration = 2592000;
+        for (const ig of igs) {
+            navigator.joinAdInterestGroup(ig, expiration);
+        }
+    }
+
+    async function measureAudienceSize() {
+        // Measuring audience size
+        // Register worklet
+        if((!window?.sharedStorage?.worklet?.addModule) || (!window?.sharedStorage?.run)){
+            return;
+        }
+        await window.sharedStorage.worklet.addModule('');
+
+        // Run audience size measurement operation
+        await window.sharedStorage.run('audience-size-measurement', {
+            data: { bucketKey: BigInt('1152836'), contributionValue: 8192}
+        });
+    }
+
+    //TODO reactivate audience-size-measurement
+    //measureAudienceSize();
+
+</script>
+
+
+</body></html>
